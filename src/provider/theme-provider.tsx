@@ -3,7 +3,7 @@
 import { ThemeProvider } from "next-themes"
 import type { ThemeProviderProps } from "next-themes/dist/types"
 
-const themeProvider = ({ children, ...props }: ThemeProviderProps) => {
+const NextThemeProvider = ({ children, ...props }: ThemeProviderProps) => {
     return (
         <ThemeProvider {...props}>
             {children}
@@ -11,4 +11,4 @@ const themeProvider = ({ children, ...props }: ThemeProviderProps) => {
     );
 };
 
-export default themeProvider;
+export default NextThemeProvider;
